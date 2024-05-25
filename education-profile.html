@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EDUCATO</title>
+    <link href="image/logo.png" rel="icon" />
+  
+   <!-- bootstrap -->
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- datatables -->
+   <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-header sticky-top">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="mobile-toggle">
+                    <i class="fa-solid fa-bars fs-3"></i>
+                </div>
+                <div class="header-icon">
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item user">
+                            <a class="nav-link" href="profile.html">
+                                <img class="image-icon" src="image/user.png" alt="no-icon">
+                            </a>
+                          </li>
+        
+                          <li class="nav-item">
+                            <a class="nav-link" href="notification.html">
+                                <img class="image-icon" src="image/notification-01.png" alt="no-icon">
+                            </a>
+                          </li>
+                    </ul>
+                </div>
+                <div class="image-logo d-flex align-items-center">
+                    <img src="image/logo.png" alt="no-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="index.html" class="link-sidebar active">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.33337 6.99967C2.33337 4.79979 2.33337 3.69984 3.01679 3.01643C3.70021 2.33301 4.80015 2.33301 7.00004 2.33301C9.19993 2.33301 10.2999 2.33301 10.9833 3.01643C11.6667 3.69984 11.6667 4.79979 11.6667 6.99967V9.33301C11.6667 11.5329 11.6667 12.6328 10.9833 13.3163C10.2999 13.9997 9.19993 13.9997 7.00004 13.9997C4.80015 13.9997 3.70021 13.9997 3.01679 13.3163C2.33337 12.6328 2.33337 11.5329 2.33337 9.33301V6.99967Z" stroke="#242424" stroke-width="1.5"/>
+                        <path d="M2.33337 22.166C2.33337 21.0788 2.33337 20.5352 2.51099 20.1064C2.74781 19.5347 3.20205 19.0804 3.77378 18.8436C4.20258 18.666 4.74618 18.666 5.83337 18.666H8.16671C9.2539 18.666 9.7975 18.666 10.2263 18.8436C10.798 19.0804 11.2523 19.5347 11.4891 20.1064C11.6667 20.5352 11.6667 21.0788 11.6667 22.166C11.6667 23.2532 11.6667 23.7968 11.4891 24.2256C11.2523 24.7973 10.798 25.2516 10.2263 25.4884C9.7975 25.666 9.2539 25.666 8.16671 25.666H5.83337C4.74618 25.666 4.20258 25.666 3.77378 25.4884C3.20205 25.2516 2.74781 24.7973 2.51099 24.2256C2.33337 23.7968 2.33337 23.2532 2.33337 22.166Z" stroke="#242424" stroke-width="1.5"/>
+                        <path d="M16.3334 18.6667C16.3334 16.4668 16.3334 15.3668 17.0168 14.6834C17.7002 14 18.8002 14 21 14C23.1999 14 24.2999 14 24.9833 14.6834C25.6667 15.3668 25.6667 16.4668 25.6667 18.6667V21C25.6667 23.1999 25.6667 24.2998 24.9833 24.9832C24.2999 25.6667 23.1999 25.6667 21 25.6667C18.8002 25.6667 17.7002 25.6667 17.0168 24.9832C16.3334 24.2998 16.3334 23.1999 16.3334 21V18.6667Z" stroke="#242424" stroke-width="1.5"/>
+                        <path d="M16.3334 5.83301C16.3334 4.74581 16.3334 4.20221 16.511 3.77341C16.7478 3.20168 17.202 2.74744 17.7738 2.51062C18.2026 2.33301 18.7462 2.33301 19.8334 2.33301H22.1667C23.2539 2.33301 23.7975 2.33301 24.2263 2.51062C24.798 2.74744 25.2523 3.20168 25.4891 3.77341C25.6667 4.20221 25.6667 4.74581 25.6667 5.83301C25.6667 6.9202 25.6667 7.4638 25.4891 7.8926C25.2523 8.46433 24.798 8.91857 24.2263 9.15539C23.7975 9.33301 23.2539 9.33301 22.1667 9.33301H19.8334C18.7462 9.33301 18.2026 9.33301 17.7738 9.15539C17.202 8.91857 16.7478 8.46433 16.511 7.8926C16.3334 7.4638 16.3334 6.9202 16.3334 5.83301Z" stroke="#242424" stroke-width="1.5"/>
+                    </svg>                        
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown link-sidebar">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4167 16.3471C11.029 16.2359 8.61394 16.8076 6.50721 18.062C4.85665 19.0448 0.528966 21.0516 3.16481 23.5628C4.4524 24.7895 5.88645 25.6668 7.68939 25.6668H14" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.0834 7.5835C18.0834 10.483 15.7329 12.8335 12.8334 12.8335C9.93388 12.8335 7.58337 10.483 7.58337 7.5835C7.58337 4.684 9.93388 2.3335 12.8334 2.3335C15.7329 2.3335 18.0834 4.684 18.0834 7.5835Z" stroke="#242424" stroke-width="1.5"/>
+                        <path d="M21 24.167V25.667M21 24.167C19.6505 24.167 18.4614 23.5041 17.7641 22.4975M21 24.167C22.3496 24.167 23.5386 23.5041 24.236 22.4975M21 16.667C22.3497 16.667 23.5388 17.33 24.2362 18.3367M21 16.667C19.6504 16.667 18.4613 17.33 17.7639 18.3367M21 16.667V15.167M25.6667 17.417L24.2362 18.3367M16.3339 23.417L17.7641 22.4975M16.3334 17.417L17.7639 18.3367M25.6662 23.417L24.236 22.4975M24.2362 18.3367C24.6485 18.932 24.8889 19.6474 24.8889 20.417C24.8889 21.1867 24.6485 21.9022 24.236 22.4975M17.7639 18.3367C17.3516 18.932 17.1112 19.6474 17.1112 20.417C17.1112 21.1867 17.3516 21.9022 17.7641 22.4975" stroke="#242424" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>                       
+                    <span>ادارة المستخدمين</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="parent-management.html" class="link-sidebar">
+                            ادارة الأباء
+                        </a>
+                    </li>
+                    <li>
+                        <a href="student-management.html" class="link-sidebar">
+                            ادارة الطلاب
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="education-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.75 5.8335H18.6667C19.6332 5.8335 20.4167 6.617 20.4167 7.5835V9.3335" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22.5499 24.3L22.0195 23.7697L22.5499 24.3ZM21.5834 3.0835C21.9976 3.0835 22.3334 2.74771 22.3334 2.3335C22.3334 1.91928 21.9976 1.5835 21.5834 1.5835V3.0835ZM23.1667 11.6668V16.3335H24.6667V11.6668H23.1667ZM14.5834 24.9168H13.4167V26.4168H14.5834V24.9168ZM4.83337 16.3335V5.8335H3.33337V16.3335H4.83337ZM13.4167 24.9168C11.1956 24.9168 9.60525 24.9152 8.39604 24.7527C7.20841 24.593 6.50138 24.2905 5.98054 23.7697L4.91988 24.8303C5.76587 25.6763 6.84221 26.0573 8.19617 26.2393C9.52856 26.4184 11.238 26.4168 13.4167 26.4168V24.9168ZM3.33337 16.3335C3.33337 18.5122 3.33178 20.2216 3.51092 21.554C3.69295 22.908 4.07388 23.9843 4.91988 24.8303L5.98054 23.7697C5.4597 23.2488 5.15721 22.5418 4.99754 21.3542C4.83497 20.145 4.83337 18.5546 4.83337 16.3335H3.33337ZM23.1667 16.3335C23.1667 18.5546 23.1651 20.145 23.0025 21.3542C22.8429 22.5418 22.5404 23.2488 22.0195 23.7697L23.0802 24.8303C23.9262 23.9843 24.3071 22.908 24.4892 21.554C24.6683 20.2216 24.6667 18.5122 24.6667 16.3335H23.1667ZM14.5834 26.4168C16.7621 26.4168 18.4715 26.4184 19.8039 26.2393C21.1579 26.0573 22.2342 25.6763 23.0802 24.8303L22.0195 23.7697C21.4987 24.2905 20.7917 24.593 19.604 24.7527C18.3948 24.9152 16.8045 24.9168 14.5834 24.9168V26.4168ZM21.5834 1.5835H7.58337V3.0835H21.5834V1.5835ZM7.58337 10.0835H21.5834V8.5835H7.58337V10.0835ZM3.33337 5.8335C3.33337 8.18071 5.23616 10.0835 7.58337 10.0835V8.5835C6.06459 8.5835 4.83337 7.35228 4.83337 5.8335H3.33337ZM7.58337 1.5835C5.23616 1.5835 3.33337 3.48629 3.33337 5.8335H4.83337C4.83337 4.31471 6.06459 3.0835 7.58337 3.0835V1.5835ZM24.6667 11.6668C24.6667 9.96395 23.2863 8.5835 21.5834 8.5835V10.0835C22.4578 10.0835 23.1667 10.7924 23.1667 11.6668H24.6667Z" stroke="#242424"stroke="#242424" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17.5 15.167L10.5 15.167" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 19.8335L10.5 19.8335" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                       
+                    <span>ادارة النظام التعليمى</span>
+                </a>
+            </li>
+            <li>
+                <a href="classes-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5 20.3C24.5 22.2799 24.5 23.2698 23.7407 23.8849C22.9813 24.5 21.7592 24.5 19.3149 24.5H18.0186C15.5742 24.5 14.3521 24.5 13.5927 23.8849C12.8334 23.2698 12.8334 22.2799 12.8334 20.3L12.8334 7.7C12.8334 5.7201 12.8334 4.73015 13.5927 4.11508C14.3521 3.5 15.5742 3.5 18.0186 3.5L19.3149 3.5C21.7592 3.5 22.9813 3.5 23.7407 4.11508C24.5 4.73015 24.5 5.7201 24.5 7.7L24.5 20.3Z" stroke="#242424" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M3.5 5.88112C3.5 4.75865 3.5 4.19741 3.84171 3.84871C4.18342 3.5 4.73339 3.5 5.83333 3.5C6.93328 3.5 7.48325 3.5 7.82496 3.84871C8.16667 4.19741 8.16667 4.75865 8.16667 5.88112L8.16667 18.5357C8.16667 19.5944 8.16667 20.1237 8.07834 20.6358C7.99751 21.1044 7.86189 21.5615 7.67441 21.9972C7.46957 22.4733 7.18183 22.9137 6.60634 23.7946C6.34992 24.1871 6.22171 24.3834 6.06068 24.4529C5.91536 24.5157 5.75131 24.5157 5.60599 24.4529C5.44496 24.3834 5.31675 24.1871 5.06032 23.7946C4.48484 22.9137 4.1971 22.4733 3.99225 21.9972C3.80477 21.5615 3.66916 21.1044 3.58832 20.6358C3.5 20.1237 3.5 19.5944 3.5 18.5357L3.5 5.88112Z" stroke="#242424" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M13.4167 19.25L15.75 19.25" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.4167 14L15.75 14" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.4167 8.75L15.75 8.75" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.16667 8.1665C8.16667 8.81084 7.122 9.33317 5.83333 9.33317C4.54467 9.33317 3.5 8.81084 3.5 8.1665" stroke="#242424" stroke-width="1.5"/>
+                    </svg>                                              
+                    <span>ادارة الصفوف </span>
+                </a>
+            </li>
+            <li>
+                <a href="material-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.33337 8.16667C2.33337 6.53318 2.33337 5.71644 2.65127 5.09253C2.9309 4.54372 3.3771 4.09753 3.9259 3.8179C4.54981 3.5 5.36655 3.5 7.00004 3.5C8.63353 3.5 9.45027 3.5 10.0742 3.8179C10.623 4.09753 11.0692 4.54372 11.3488 5.09253C11.6667 5.71644 11.6667 6.53318 11.6667 8.16667V19.8333C11.6667 21.4668 11.6667 22.2836 11.3488 22.9075C11.0692 23.4563 10.623 23.9025 10.0742 24.1821C9.45027 24.5 8.63353 24.5 7.00004 24.5C5.36655 24.5 4.54981 24.5 3.9259 24.1821C3.3771 23.9025 2.9309 23.4563 2.65127 22.9075C2.33337 22.2836 2.33337 21.4668 2.33337 19.8333V8.16667Z" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 19.8335H7.01048" stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.33337 8.1665H11.6667" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3568 9.6465C12.9427 8.09478 12.7357 7.31892 12.8783 6.64532C13.0037 6.05281 13.3127 5.51538 13.761 5.11005C14.2706 4.64926 15.0432 4.44137 16.5885 4.02559C18.1338 3.6098 18.9064 3.40191 19.5772 3.54509C20.1673 3.67103 20.7025 3.98132 21.1061 4.43148C21.565 4.94324 21.772 5.7191 22.1861 7.27082L25.1433 18.3535C25.5574 19.9052 25.7644 20.6811 25.6218 21.3547C25.4964 21.9472 25.1874 22.4846 24.7391 22.8899C24.2295 23.3507 23.4568 23.5586 21.9116 23.9744C20.3663 24.3902 19.5937 24.5981 18.9229 24.4549C18.3328 24.329 17.7976 24.0187 17.394 23.5685C16.9351 23.0568 16.7281 22.2809 16.314 20.7292L13.3568 9.6465Z" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.7449 19.478L20.755 19.4753" stroke="#242424" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 9.33355L21.5835 7" stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                              
+                    <span>ادارة المواد التعليمية</span>
+                </a>
+            </li>
+            <li>
+                <a href="reports.html" class="link-sidebar">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.16663 19.8332L8.16663 15.1665" stroke="#242424" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14 19.8332L14 8.1665" stroke="#242424" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M19.8333 19.833L19.8333 12.833" stroke="#242424" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M2.91663 13.9998C2.91663 8.7751 2.91663 6.16274 4.53974 4.53962C6.16286 2.9165 8.77523 2.9165 14 2.9165C19.2247 2.9165 21.8371 2.9165 23.4602 4.53962C25.0833 6.16274 25.0833 8.7751 25.0833 13.9998C25.0833 19.2246 25.0833 21.8369 23.4602 23.4601C21.8371 25.0832 19.2247 25.0832 14 25.0832C8.77523 25.0832 6.16286 25.0832 4.53974 23.4601C2.91663 21.8369 2.91663 19.2246 2.91663 13.9998Z" stroke="#242424" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>                                               
+                    <span>التحليلات والتقارير </span>
+                </a>
+            </li>
+            <li>
+                <a href="notifications.html" class="link-sidebar">
+                    <svg class="sidebar-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.0181 13.4068C5.93238 15.0355 6.03092 16.7691 4.57582 17.8605C3.89858 18.3684 3.5 19.1655 3.5 20.0121C3.5 21.1766 4.4121 22.1673 5.6 22.1673H22.4C23.5879 22.1673 24.5 21.1766 24.5 20.0121C24.5 19.1655 24.1014 18.3684 23.4242 17.8605C21.9691 16.7691 22.0676 15.0355 21.9819 13.4068C21.7585 9.16158 18.2511 5.83398 14 5.83398C9.74887 5.83398 6.24153 9.16158 6.0181 13.4068Z" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.25 3.646C12.25 4.61249 13.0335 5.8335 14 5.8335C14.9665 5.8335 15.75 4.61249 15.75 3.646C15.75 2.6795 14.9665 2.3335 14 2.3335C13.0335 2.3335 12.25 2.6795 12.25 3.646Z" stroke="#141B34" stroke-width="1.5"/>
+                        <path d="M17.5 22.167C17.5 24.1 15.933 25.667 14 25.667C12.067 25.667 10.5 24.1 10.5 22.167" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                              
+                    <span> الاشعارات</span>
+                </a>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main home">
+        <div class="main-content">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <div class="main-title">
+                        <h5>ادارة النظام التعليمي </h5>
+                        <p> ادارة النظام التعليمي</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-border mt-5">
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <div class="data-profile">
+                            <h5 class="mb-3">British</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex justify-content-end">
+                        <div>
+                            <button type="button" class="main-btn-delete">
+                                حذف النظام
+                                <i class="fa-regular fa-trash-can fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="data-student">
+                            <h6 class="gray-text">English</h6>
+                            <p class="gray-text">اللغة</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="data-student">
+                            <h6 class="gray-text">14</h6>
+                            <p class="gray-text">عدد الصفوف</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="data-student">
+                            <h6 class="gray-text">3</h6>
+                            <p class="gray-text">عدد الفصول</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-2">
+                        <div class="data-student">
+                            <h6 class="gray-text">1955</h6>
+                            <p class="gray-text">عدد الطلاب</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-border mt-5">
+                <div class="tabs">
+                    <ul class="tabs-list">
+                      <li class="show" data-content=".content-one">بيانات النظام</li>
+                      <li data-content=".content-two">الصفوف</li>
+                    </ul>
+                    <div class="content-list mt-4 mb-5">
+                      <div class="content-one">
+                        <form class="row g-3">
+                            <div class="col-md-6 col-12">
+                              <div class="change-direction">
+                                   <label for="validationDefault01" class="form-label">اسم النظام التعليمى</label>
+                                   <input type="text" class="form-control" id="validationDefault01" value="لغات" required>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-12 text-start">
+                                <div class="position-relative">
+                                    <label for="validationDefault03" class="form-label left"> Name Of Educating System</label>
+                                    <input type="text" class="form-control text-start" id="validationDefault03" value="National" required>
+                                </div>
+                              </div>
+                            <div class="col-12">
+                                <div class="change-direction">
+                                    <label for="validationDefault02" class="form-label"> اللغة</label>
+                                    <input type="text" class="form-control" id="validationDefault02" value="الانجليزية" required>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="change-direction">
+                                    <label for="validationDefault03" class="form-label">عدد الفصول الدراسية</label>
+                                    <input type="number" class="form-control" id="validationDefault03" value="3" required>
+                                </div>
+                            </div>
+                          </form>
+                      </div>
+                      <div class="content-two">
+                        <div class="inside-card">
+                            <div class="row mb-4">
+                                <div class="col-lg-7 col-md-5 col-sm-6 col-12 mb-2">
+                                    <div class="main-title second-title d-flex align-items-center">
+                                        <h5> الصفوف</h5>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-3 col-sm-6 col-12 mb-2">
+                                    <select class="select-table form-select" aria-label="Default select example">
+                                        <option selected> اللغة</option>
+                                        <option value="1">العربية</option>
+                                        <option value="2"> الانجليزية</option>
+                                      </select>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-2">
+                                    <input class="search form-control me-2" type="search" placeholder="ابحث هنا" aria-label="Search">
+                                </div>
+                            </div>
+                            <div class="scroll">
+                                <table id="example" class="table data-table" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <td>الصف </td>
+                                            <td>عدد المواد</td>
+                                            <td>عدد الطلاب</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table-info">الصف الأول</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">5</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">1688</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info status-true">
+                                                    <i class="fa-solid fa-ellipsis-vertical icon-table"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-info">الصف الثانى</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">6</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">1688</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info status-true">
+                                                    <i class="fa-solid fa-ellipsis-vertical icon-table"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-info">الصف الأول</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">8</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">1688</div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info status-true">
+                                                    <i class="fa-solid fa-ellipsis-vertical icon-table"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <button class="btn-submit" type="submit">حفظ</button>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script> 
+    <script src="js/chart.min.js"></script> 
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script> 
+    <script src="js/main.js"></script> 
+    <script src="js/plugin.js"></script> 
+
+</body>
+
+</html>

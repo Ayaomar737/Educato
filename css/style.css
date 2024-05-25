@@ -12,6 +12,9 @@
     --primary-text2: #3F4254; 
     --gray-text: #B5B5C3;
     --select-text: #64748B;
+    --gray-title: #6D7A7B;
+    --red-color: #D12E34;
+    --green-color: #317D35;
 }
 
 * {
@@ -34,13 +37,148 @@ a {
 p{
     margin-bottom: 0;
 }
+.gray-text{
+    color: var(--gray-title) !important;
+}
+.primary-text{
+    color: var(--primary-text2) !important;
+}
 .scroll{
     overflow-x: auto;
 }
 .title{
-    color: #000000;
+    color: #3F4254;
     font-size: 18px;
     font-weight: 700;
+}
+.main-title h5{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.main-title p{
+    color: var(--gray-title);
+    font-size: 16px;
+    font-weight: 400;
+}
+.second-title h5{
+    color: var(--primary-text2);
+    font-size: 18px;
+}
+.main-btn-add{
+    height: 41px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.5s ease;
+}
+.main-btn-add:hover{
+    background-color: var(--second-color);
+}
+.main-btn-add svg{
+    margin-right: 10px;
+}
+.main-btn-delete{
+    width: 145px;
+    height: 41px;
+    background-color: rgba(209, 46, 52, 0.1);
+    color: var(--red-color);
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+.main-btn-delete svg{
+    margin-right: 10px;
+}
+.btn-submit{
+    width: 95%;
+    height: 57px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.btn-submit:hover{
+    background-color: var(--second-color);
+}
+.btn-subscribe-change{
+    background-color: var(--second-color);
+    color: white;
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--second-color);
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.btn-subscribe-change:hover{
+    background-color: white;
+    color: var(--second-color);
+}
+.btn-cancel{
+    background-color: white;
+    color: var(--red-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.btn-cancel:hover{
+    background-color: var(--red-color);
+    color: white;
+    border: 1px solid var(--red-color);
+}
+.btn-exit{
+    background-color: white;
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    border-radius: 8px;
+    padding: 8px 40px 8px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.5s ease;
+}
+.btn-exit:hover{
+    background-color: var(--second-color);
+    color: white;
+}
+.status-true{
+    color: var(--green-color);
+}
+.status-false{
+    color: var(--red-color);
+}
+
+.change-direction{
+    position: relative;
+    margin: 5px;
+}
+.change-direction label{
+    position: absolute;
+    top: -12px;
+    right: 9px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    color: #112211;
+}
+label.left{
+    left: 9px;
+    position: absolute;
+    top: -12px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 400;
+    color: #112211;
 }
 
 /* start header */
@@ -255,7 +393,7 @@ p{
     background-image: url(../image/Caret_Down_MD.svg);
     background-size: 24px;
     border-color: var(--second-color-opacity);
-    width: 20%;
+    /* width: 20%; */
 }
 .form-select:focus{
     box-shadow: none;
@@ -271,6 +409,7 @@ p{
     border-radius: 10px;
     border-color: var(--gray-color);
     width: 100%; 
+    font-size: 14px;
 }
 .search{
     background-color: #F1F5F9;
@@ -339,8 +478,117 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
     align-items: center;
   }
 
-/* end home page */
+/******************* end home page ************************/
 
+/******************* stert parent profile page ************************/
+.image-profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+.data-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 16px;
+}
+.data-profile h5{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+}
+.data-profile p{
+    color: var(--gray-title);
+    font-size: 16px;
+    font-weight: 500;
+}
+.tabs-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tabs-list li{
+    color: var(--select-text);
+    padding: 5px 15px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: 1px;
+}
+.tabs-list li:hover{
+    color: var(--second-color);
+}
+.tabs-list .show{
+    color: var(--second-color);
+    border-bottom: 2px solid var(--second-color);
+    font-weight: 700;
+}
+.content-list > div:not(:first-child){
+    display: none;
+}
+.content-one .form-control,
+.content-one .form-select{
+    color: #334155;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #79747E;
+    background-color: #F7F8F9;
+    padding: 10px;
+}
+.content-one .form-control:focus,
+.content-one .form-select:focus{
+    border: 1px solid #79747E;
+}
+.image-data{
+    width: 161px;
+    height: 161px;
+    border-radius: 20px;
+}
+.inside-card{
+    border: 1px solid var(--gray-color);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 15px;
+}
+.subscribe-data h5{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.subscribe-data p{
+    color: var(--select-text);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/******************* end parent profile page ************************/
+
+/******************* start student profile page ************************/
+.data-student{
+    border: 1px solid var(--gray-color);
+    border-radius: 8px;
+    padding: 8px;
+}
+.data-student h6{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+.data-student p{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/******************* end student profile page ************************/
+
+.main-content-add{
+    padding: 35px 120px !important;
+}
 .sidebar.change {
     transform: translateX(0);
 }
@@ -378,5 +626,16 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
     .nav-link{
         width: 40px;
         height: 40px;
+    }
+    .main-content-add{
+        padding: 35px !important;
+    }
+}
+
+@media (max-width: 466px){
+    .tabs-list li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }
