@@ -583,6 +583,71 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
     font-size: 16px;
     font-weight: 400;
 }
+.modal-header .btn-close{
+    margin: 0;
+}
+.modal-header{
+    border-bottom: none;
+}
+.subscribe .modal-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.subscribe .image-table{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 16px;
+}
+.subscribe .modal-body p{
+    color: var(--select-text);
+    font-size: 16px;
+    font-weight: 400;   
+}
+.subscribe .name-table{
+    color: var(--primary-text2);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.subscribe .subscribe-month label{
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe .subscribe-month{
+    border: 1px solid var(--gray-color);
+    border-radius: 10px;
+    padding: 10px 15px 10px 35px;
+}
+.subscribe .form-check-input{
+    border-color: #94A3B8;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.subscribe .form-check-input:checked{
+    border-color: var(--green-color);
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+    background-color: var(--green-color);
+}
+.form-check.checked{
+    border: 1px solid var(--green-color);
+}
+.subscribe-month .form-check-label p{
+    color: #000000;
+    font-size: 14;
+    font-weight: 600;
+}
+.subscribe-month .form-check-label .change{
+    color: var(--second-color) !important;
+    font-size: 16px !important;
+}
+.change-cancel{
+    background-color: var(--red-color) !important;
+}
 
 /******************* end student profile page ************************/
 

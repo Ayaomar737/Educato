@@ -344,7 +344,7 @@
                                 <h5 class="mb-4">10 KWD</h5>
                             </div>
                             <div class="d-flex justify-content-center mt-5 mb-4">
-                                <button class="btn-subscribe-change" type="button">تغيير الاشتراك</button>
+                                <button class="btn-subscribe-change" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">تغيير الاشتراك</button>
                                 <button class="btn-cancel" type="button">الغاء الاشتراك</button>
                             </div>
                         </div>
@@ -409,6 +409,60 @@
         </div>
     </div>
     <!-- END MAIN CONTENT -->
+
+
+
+    <!-- Modal change subscribe -->
+<div class="modal subscribe fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">تحويل الاشتراك</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>معاد الدفع القادم 25 ديسيمبر, 2024</p>
+          <div class="d-flex mt-4">
+            <img class="image-table" src="image/image-table.png" alt="no-image">
+            <div class="d-flex align-items-center">
+                <h6 class="name-table">محمود ابراهيم القحطاني</h6>
+            </div>
+        </div>
+        <div>
+            <div class="row mt-4">
+                <div class="col-md-6 col-12 mb-2">
+                    <div class="form-check subscribe-month checked">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            <p>شهري</p>
+                            <p class="change">60 KWD</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-2">
+                    <div class="form-check subscribe-month">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            <p>سنوى</p>
+                            <p class="change">120 KWD</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-8 col-12 mb-3">
+                    <button type="button" class="main-btn-add w-100">حفظ</button>
+                </div>
+                <div class="col-lg-4 col-12 mb-3">
+                    <button type="button" class="main-btn-add change-cancel w-100">الغاء</button>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
