@@ -8,9 +8,14 @@ $(function(){
         $(".sidebar").toggleClass("change");
       });
 
+
+
     //   datatables
 
     $('#example').DataTable();
+
+
+    
 
     // tabs 
 
@@ -22,6 +27,20 @@ $('.tabs-list li').on('click', function (){
 
     $($(this).data('content')).fadeIn();
 });
+
+
+
+    // dropfiy
+
+    $('.dropify').dropify();
+
+
+    //collapse icon
+
+    $('.btn-ollapse').click(function(){
+        $(this).toggleClass('active');
+    });
+
     
     
 });

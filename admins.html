@@ -203,392 +203,152 @@
     <!-- END SIDEBAR -->
 
     <!-- MAIN CONTENT -->
-    <div class="main home">
+    <div class="main">
         <div class="main-content">
             <div class="row">
-                <div class="col-12 mb-2">
+                <div class="col-md-6 col-12 mb-2">
                     <div class="main-title">
-                        <h5>ادارة أولياء الأمور</h5>
+                        <h5>المديرين</h5>
                         <p>
-                            <span>ادارة المستخدمين</span>/
-                            <span>ادارة الاباء</span>
+                            <span>اعدادات النظام </span>/
+                            <span>المديرين</span>
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="card-border mt-5">
-                <div class="row">
-                    <div class="col-md-8 col-12 d-flex">
-                        <img class="image-profile" src="image/image-table.png" alt="no-image">
-                        <div class="data-profile">
-                            <h5 class="mb-3">محمود محمد علي</h5>
-                            <p>
-                                <span class="me-2">mahmoudmohamed@gmail.com</span>|
-                                <span class="ms-1">+965 5531546</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12 d-flex justify-content-end">
-                        <div>
-                            <button type="button" class="main-btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                حذف الحساب
-                                <i class="fa-regular fa-trash-can fa-lg"></i>
+                <div class="col-md-6 col-12 d-flex justify-content-md-end align-items-center">
+                    <div>
+                        <a href="add-admin.html">
+                            <button type="button" class="main-btn-add">
+                                اضف مدير 
+                                <i class="fa-solid fa-plus fa-lg"></i>
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="card-border mt-5">
-                <div class="tabs">
-                    <ul class="tabs-list">
-                      <li class="show" data-content=".content-one">بيانات الوالد</li>
-                      <li data-content=".content-two">الأبناء</li>
-                      <li data-content=".content-three">الاشتراكات</li>
-                      <li data-content=".content-four">الفواتير</li>
-                    </ul>
-                    <div class="content-list mt-4 mb-5">
-                      <div class="content-one">
-                        <img class="image-data mb-4" src="image/image-table.png" alt="no-image">
-                        <form class="row g-3">
-                            <div class="col-12">
-                                <div class="change-direction">
-                                    <label for="validationDefault01" class="form-label">الاسم بالكامل</label>
-                                    <input type="text" class="form-control" id="validationDefault01" value="محمود محمد أحمد" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <div class="change-direction">
-                                    <label for="validationDefault02" class="form-label">رقم الهاتف</label>
-                                    <input type="number" class="form-control" id="validationDefault02" value="995621631345" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12">
-                                <div class="change-direction">
-                                    <label for="validationDefault03" class="form-label">البريد الالكترونى</label>
-                                    <input type="text" class="form-control" id="validationDefault03" value="Mohamedali@gmail.com" required>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="change-direction">
-                                    <label for="validationDefault01" class="form-label">كلمة السر</label>
-                                    <input type="password" class="form-control" id="validationDefault01" value="Mohamedali" required>
-                                </div>
-                              </div>
-                          </form>
-                      </div>
-                      <div class="content-two">
-                        <div class="inside-card">
-                            <div class="row mb-4">
-                                <div class="col-md-6 col-12 mb-2">
-                                    <div class="main-title second-title d-flex align-items-center">
-                                        <h5> الأبناء</h5>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12 d-flex justify-content-md-end align-items-center">
-                                    <div>
-                                        <button type="button" class="main-btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                                             اضف ابن 
-                                                <i class="fa-solid fa-plus fa-lg"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="scroll">
-                                <table class="table data-table" style="width:100%">
-                                    <tbody>
-                                        <tr>
-                                            <td>الأسم</td>
-                                            <td>رقم الهاتف</td>
-                                            <td>البريد الالكترونى</td>
-                                            <td>اسم المدرسة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img class="image-table" src="image/image-table.png" alt="no-image">
-                                                    <div>
-                                                        <h6 class="name-table">محمود ابراهيم القحطاني</h6>
-                                                        <p class="class-student">الصف العاشر</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">+965 5515463</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">Mohamedali@gmail.com</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">مدرسة المستقبل بنين</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="d-flex">
-                                                    <img class="image-table" src="image/image-table.png" alt="no-image">
-                                                    <div>
-                                                        <h6 class="name-table">محمود ابراهيم القحطاني</h6>
-                                                        <p class="class-student">الصف العاشر</p>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">+965 5515463</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">Mohamedali@gmail.com</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">مدرسة المستقبل بنين</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="content-three">
-                        <div class="inside-card">
-                            <div class="subscribe-data mt-4 mb-3">
-                                <h5 class="primary-text mb-4">اشتراك شهري</h5>
-                                <p class="mb-4">معاد الدفع القادم 25 ديسيمبر, 2024</p>
-                                <h5 class="mb-4">60 KWD</h5>
-                            </div>
-                            <div class="d-flex justify-content-center mt-5 mb-4">
-                                <button class="btn-subscribe-change" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">تغيير الاشتراك </button>
-                                <button class="btn-cancel" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">الغاء الاشتراك</button>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="content-four">
-                        <div class="inside-card">
-                            <div class="scroll">
-                                <table class="table data-table" style="width:100%">
-                                    <tbody>
-                                        <tr>
-                                            <td>رقم الفاتورة</td>
-                                            <td>نوع الاشتراك</td>
-                                            <td>تاريخ الاشتراك</td>
-                                            <td>تاريخ انتهاء الاشتراك</td>
-                                            <td> الحالة</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table-info">#775856253</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">شهري</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">24/06/2023</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">24/07/2023</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info status-false">غير مدفوع</div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="table-info">#775856253</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">سنوي</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">24/06/2023</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info">24/07/2024</div>
-                                            </td>
-                                            <td>
-                                                <div class="table-info status-true"> مدفوع</div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                      </div>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12 mb-2 d-flex align-items-center">
+                        <h5 class="title">
+                             المديرين
+                            <span>(13)</span>
+                        </h5>
                     </div>
-                  </div>
+                    <div class="col-md-2 col-sm-6 col-12 mb-2">
+                        <select class="select-table form-select" aria-label="Default select example">
+                            <option selected>عدد المديرين</option>
+                            <option value="1">8 </option>
+                            <option value="2">5 </option>
+                            <option value="3">3  </option>
+                          </select>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-2">
+                        <input class="search form-control me-2" type="search" placeholder="ابحث هنا" aria-label="Search">
+                    </div>
+                </div>
+                <div class="scroll">
+                    <table id="example" class="table data-table" style="width:100%">
+                        <thead>
+                            <tr>
+                                <td>الأسم</td>
+                                <td>الدور</td>
+                                <td>رقم الهاتف</td>
+                                <td>البريد الألكترونى</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="admin-profile.html">
+                                        <div class="d-flex">
+                                            <img class="image-table" src="image/image-table1.png" alt="no-image">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="name-table">غدير ابراهيم القحطاني</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="table-info">Admin</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">+965 5515463</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">ghaderali@gmail.com</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="admin-profile.html">
+                                        <div class="d-flex">
+                                            <img class="image-table" src="image/image-table.png" alt="no-image">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="name-table">محمود ابراهيم القحطاني</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="table-info">staff</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">+965 5515463</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">Mohamedali@gmail.com</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="admin-profile.html">
+                                        <div class="d-flex">
+                                            <img class="image-table" src="image/image-table1.png" alt="no-image">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="name-table">غدير ابراهيم القحطاني</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="table-info">Admin</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">+965 5515463</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">ghaderali@gmail.com</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="admin-profile.html">
+                                        <div class="d-flex">
+                                            <img class="image-table" src="image/image-table.png" alt="no-image">
+                                            <div class="d-flex align-items-center">
+                                                <h6 class="name-table">محمود ابراهيم القحطاني</h6>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="table-info">staff</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">+965 5515463</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">Mohamedali@gmail.com</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="mt-5 d-flex justify-content-center">
-                <button class="btn-submit" type="submit">حفظ</button>
-              </div>
+
         </div>
     </div>
     <!-- END MAIN CONTENT -->
-
-
-    <!-- Modal change subscribe -->
-<div class="modal subscribe fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">تحويل الاشتراك</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>معاد الدفع القادم 25 ديسيمبر, 2024</p>
-          <div class="d-flex mt-4">
-            <img class="image-table" src="image/image-table.png" alt="no-image">
-            <div class="d-flex align-items-center">
-                <h6 class="name-table">محمود ابراهيم القحطاني</h6>
-            </div>
-        </div>
-        <div>
-            <div class="row mt-4">
-                <div class="col-md-6 col-12 mb-2">
-                    <div class="form-check subscribe-month checked">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            <p>شهري</p>
-                            <p class="change">60 KWD</p>
-                        </label>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 mb-2">
-                    <div class="form-check subscribe-month">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
-                            <p>سنوى</p>
-                            <p class="change">120 KWD</p>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-8 col-12 mb-3">
-                    <button type="button" class="main-btn-add w-100">حفظ</button>
-                </div>
-                <div class="col-lg-4 col-12 mb-3">
-                    <button type="button" class="main-btn-add change-cancel w-100" data-bs-dismiss="modal" aria-label="Close">الغاء</button>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal delete  -->
-<div class="modal subscribe fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">حذف الحساب الاشتراك</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>هل تريد حقا حذف حساب ولى الأمر؟</p>
-        <div>
-            <div class="row mt-4">
-                <div class="col-lg-8 col-12 mb-3">
-                    <button type="button" class="main-btn-add w-100">حفظ</button>
-                </div>
-                <div class="col-lg-4 col-12 mb-3">
-                    <button type="button" class="main-btn-add change-cancel w-100" data-bs-dismiss="modal" aria-label="Close">الغاء</button>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-   <!-- Modal cancel subscribe -->
-<div class="modal subscribe fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">الغاء الاشتراك</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>هل تريد حقا الغاء الأشتراك؟</p>
-          <div class="d-flex mt-4">
-            <img class="image-table" src="image/image-table.png" alt="no-image">
-            <div class="d-flex align-items-center">
-                <h6 class="name-table">محمود ابراهيم القحطاني</h6>
-            </div>
-        </div>
-        <div>
-            <div class="row mt-4">
-                <div class="col-12 mb-2">
-                    <div class="form-check subscribe-month checked">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                            <p>شهري</p>
-                            <p class="change">60 KWD</p>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col-lg-7 col-12 mb-3">
-                    <button type="button" class="main-btn-add w-100" data-bs-dismiss="modal" aria-label="Close">الرجوع</button>
-                </div>
-                <div class="col-lg-5 col-12 mb-3">
-                    <button type="button" class="main-btn-add change-cancel w-100">الغاء الاشتراك</button>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal change subscribe -->
-<div class="modal subscribe fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">  اضف ابن</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>قم بكتابة البريد الألكتروني الخاص بالأبن</p>
-          <div class="row mt-3">
-            <div class="col-12 content-one">
-                <div class="change-direction">
-                    <label for="validationDefault03" class="form-label">البريد الالكترونى</label>
-                    <input type="text" class="form-control" id="validationDefault03" value="Mohamedali@gmail.com" required>
-                </div>
-            </div>
-            <div class="col-12 d-flex justify-content-between">
-                <div class="d-flex mt-4">
-                    <img class="image-table rounded-circle" src="image/image-table.png" alt="no-image">
-                    <div>
-                        <h6 class="name-table">محمود ابراهيم القحطاني</h6>
-                        <p class="email-add"> mohammedali@gmail.com</p>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <button type="button" class="btn-add-person">
-                        اضافة
-                        <i class="fa-solid fa-plus fa-lg"></i>
-                    </button>
-                </div>
-            </div>
-          </div>
-        <div>
-            <div class="row mt-4">
-                <div class="col-lg-8 col-12 mb-3">
-                    <button type="button" class="main-btn-add w-100">حفظ</button>
-                </div>
-                <div class="col-lg-4 col-12 mb-3">
-                    <button type="button" class="main-btn-add change-cancel w-100" data-bs-dismiss="modal" aria-label="Close">الغاء</button>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>

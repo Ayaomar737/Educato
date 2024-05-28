@@ -9,7 +9,7 @@ document.querySelectorAll('.sidebar-submenu').forEach(e => {
       let dropdown_content = e.querySelector('.sidebar-menu-dropdown-content')
       let dropdown_content_lis = dropdown_content.querySelectorAll('li')
 
-      let active_height = dropdown_content_lis[0].clientHeight * dropdown_content_lis.length
+      let active_height = (dropdown_content_lis[0].clientHeight * dropdown_content_lis.length) + 30
 
       dropdown_content.classList.toggle('active')
 
@@ -48,19 +48,12 @@ const myChart = new Chart(ctx, {
           grid: {
             display: false
           }
-        },
-        // x: {
-        //   grid: {
-        //     display: false
-        //   }
-        // }
+        }
       },
       legend: {
         labels: {
           boxWidth: 20,
           boxHeight: 20,
-          // usePointStyle: true,
-          // pointStyle: 'rectRounded',
         }
       }
     },
