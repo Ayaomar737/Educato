@@ -259,7 +259,14 @@
                             <div class="col-md-6 col-12">
                                 <div class="change-direction">
                                     <label for="validationDefault02" class="form-label">رقم الهاتف</label>
-                                    <input type="number" class="form-control" id="validationDefault02" value="995621631345" required>
+                                    <div class="d-flex">
+                                        <input type="number" class="form-control phone" id="validationDefault02"
+                                            value="995621631345" required>
+                                        <select id="country-code">
+                                            <option value="+1">+20</option>
+                                            <option value="+44">+997</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-12">
@@ -441,7 +448,7 @@
         <div>
             <div class="row mt-4">
                 <div class="col-md-6 col-12 mb-2">
-                    <div class="form-check subscribe-month checked">
+                    <div class="form-check subscribe-month">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
                             <p>شهري</p>
@@ -451,8 +458,8 @@
                 </div>
                 <div class="col-md-6 col-12 mb-2">
                     <div class="form-check subscribe-month">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                        <label class="form-check-label" for="flexCheckChecked">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1">
+                        <label class="form-check-label" for="flexCheckChecked1">
                             <p>سنوى</p>
                             <p class="change">120 KWD</p>
                         </label>
@@ -518,7 +525,7 @@
         <div>
             <div class="row mt-4">
                 <div class="col-12 mb-2">
-                    <div class="form-check subscribe-month checked">
+                    <div class="form-check subscribe-month">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                         <label class="form-check-label" for="flexCheckChecked">
                             <p>شهري</p>
@@ -541,7 +548,7 @@
     </div>
   </div>
 
-  <!-- Modal change subscribe -->
+  <!-- Modal add son -->
 <div class="modal subscribe fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
