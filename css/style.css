@@ -237,7 +237,7 @@ label.left{
 /* start header */
 
 .main-header {
-    height: 100px;
+    height: 80px;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -246,15 +246,35 @@ label.left{
 }
 
 .image-logo img{
-    height: 32px;
+    height: 28px;
 }
 .main-header .image-icon{
     width: 24px;
     height: 24px;
 }
+.main-header .dropdown .dropdown-menu{
+    border: none;
+    box-shadow: 0px 4px 20px 0px rgb(0, 0, 0, 0.1);
+    margin-left: -50px !important;
+    width: 300px;
+    text-align: right;
+    padding: 20px 0 !important;
+}
+.main-header .dropdown-menu .dropdown-item:hover{
+    background-color: white;
+}
+.main-header .dropdown-menu .dropdown-item{
+    color: var(--primary-text);
+    font-size: 16px;
+    font-weight: 500;
+}
+.head-notification{
+    color: var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+}
 .nav-link{
-    width: 58px;
-    height: 58px;
+    width: 50px;
+    height: 50px;
     border-radius: 8px;
     border: 1px solid var(--gray-color);
     display: flex;
@@ -281,9 +301,9 @@ label.left{
 .sidebar {
     background-color: white;
     position: fixed;
-    top: 100px;
+    top: 80px;
     right: 0;
-    width: 300px;
+    width: 270px;
     height: 100vh;
     border-left: 1px solid var(--gray-color);
     overflow-y: auto;
@@ -295,7 +315,7 @@ label.left{
 }
 
 .sidebar-menu.fixed-menu{
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .sidebar-menu .sidebar-icon{
@@ -413,7 +433,7 @@ label.left{
 /******************** start home page **********************/
 
 .main {
-    padding-right: 300px;
+    padding-right: 270px;
 }
 
 .main-content {
@@ -892,6 +912,30 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
     background-color: var(--second-color);
 }
 
+
+
+/************************** login **************************/
+
+.area-login{
+    max-width: 500px;
+    min-height: 600px;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+}
+.form-login label{
+    color: gray;
+}
+.area-login input{
+    padding: 15px;
+    border: 1px solid gainsboro;
+}
+.area-login input:focus{
+    border: 1px solid var(--second-color);
+    outline: none;
+}
+
+
 /* *************************************************** */
 
 
@@ -931,7 +975,7 @@ table.dataTable thead>tr>th.sorting:before, table.dataTable thead>tr>th.sorting:
 
 @media (max-width: 578px) {
     .image-logo img{
-        height: 24px;
+        height: 20px;
     }
     .nav-link{
         width: 40px;
