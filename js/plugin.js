@@ -12,7 +12,10 @@ $(function(){
 
     //   datatables
 
-    $('#example').DataTable();
+    // $('#example').DataTable();
+    
+1
+new DataTable('#example');
 
 
     

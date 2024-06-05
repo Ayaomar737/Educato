@@ -272,7 +272,7 @@
                 <div class="tabs">
                     <ul class="tabs-list">
                       <li class="show" data-content=".content-one">بيانات الطالب</li>
-                      <li data-content=".content-two">الأباء</li>
+                      <li data-content=".content-two">أولياء الأمور</li>
                       <li data-content=".content-three">الاشتراكات</li>
                       <li data-content=".content-four">الفواتير</li>
                     </ul>
@@ -313,19 +313,19 @@
                             </div>
                             <div class="col-md-6 col-12">
                                 <div class="change-direction">
-                                    <label for="validationDefault04" class="form-label">الصف الدراسى</label>
-                                    <select class="form-select" id="validationDefault04" required>
-                                        <option selected disabled value="">الأول</option>
-                                        <option>الثانى</option>
-                                    </select>
-                                </div>
-                              </div>
-                              <div class="col-md-6 col-12">
-                                <div class="change-direction">
                                     <label for="validationDefault04" class="form-label">النظام التعليمى</label>
                                     <select class="form-select" id="validationDefault04" required>
                                         <option selected disabled value="">IG</option>
                                         <option>National</option>
+                                    </select>
+                                </div>
+                              </div>
+                            <div class="col-md-6 col-12">
+                                <div class="change-direction">
+                                    <label for="validationDefault04" class="form-label">الصف الدراسى</label>
+                                    <select class="form-select" id="validationDefault04" required>
+                                        <option selected disabled value="">الأول</option>
+                                        <option>الثانى</option>
                                     </select>
                                 </div>
                               </div>
@@ -342,23 +342,24 @@
                             <div class="row mb-4">
                                 <div class="col-md-6 col-12 mb-2">
                                     <div class="main-title second-title d-flex align-items-center">
-                                        <h5> الأباء</h5>
+                                        <h5> أولياء الامور</h5>
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 d-flex justify-content-md-end align-items-center">
                                     <div>
                                         <button type="button" class="main-btn-add" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                                            اضف والد 
+                                            اضف ولى أمر 
                                             <i class="fa-solid fa-plus fa-lg"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div class="scroll">
-                                <table class="table data-table" style="width:100%">
+                                <table class="data-table" style="width:100%">
                                     <tbody>
                                         <tr>
                                             <td>الأسم</td>
+                                            <td>عدد الابناء</td>
                                             <td>رقم الهاتف</td>
                                             <td>البريد الالكترونى</td>
                                         </tr>
@@ -370,6 +371,9 @@
                                                         <h6 class="name-table">محمود ابراهيم القحطاني</h6>
                                                     </div>
                                                 </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">5</div>
                                             </td>
                                             <td>
                                                 <div class="table-info">+965 5515463</div>
@@ -386,6 +390,9 @@
                                                         <h6 class="name-table">سالمة ابراهيم السيد</h6>
                                                     </div>
                                                 </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-info">5</div>
                                             </td>
                                             <td>
                                                 <div class="table-info">+965 5515463</div>
@@ -415,7 +422,7 @@
                       <div class="content-four">
                         <div class="inside-card">
                             <div class="scroll">
-                                <table class="table data-table" style="width:100%">
+                                <table class="data-table" style="width:100%">
                                     <tbody>
                                         <tr>
                                             <td>رقم الفاتورة</td>
