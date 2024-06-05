@@ -471,7 +471,7 @@ label.left{
     background-image: url(../image/Caret_Down_MD.svg);
     background-size: 24px;
     border-color: var(--second-color-opacity);
-    /* width: 20%; */
+    width: 70%;
 }
 .form-select:focus{
     box-shadow: none;
