@@ -18,6 +18,54 @@ document.querySelectorAll('.sidebar-submenu').forEach(e => {
 })
 
 
+//////////////////////// add new input //////////////////////////
+
+let counter = 1;
+
+function addInput() {
+    
+    let inputGroup = document.createElement('div');
+    inputGroup.id = `inputGroup${counter}`;
+    inputGroup.className = 'change-direction d-flex mb-3';
+
+   
+    let label = document.createElement('label');
+    label.textContent = `الفصل ${counter} `;
+    
+    
+    let input = document.createElement('input');
+    input.type = 'text';
+    input.className = 'form-control';
+    input.name = `input${counter}`;
+
+  
+    let deleteButton = document.createElement('button');
+    deleteButton.innerHTML = '<i class="fa-regular fa-trash-can fa-lg mr-0"></i>';
+    deleteButton.className = 'main-btn-delete text-center';
+    deleteButton.onclick = function() {
+        deleteInput(inputGroup.id);
+    };
+    
+ 
+    inputGroup.appendChild(label);
+    inputGroup.appendChild(input);
+    inputGroup.appendChild(deleteButton);
+    
+    
+    let container = document.getElementById('inputContainer');
+    container.appendChild(inputGroup);
+    
+    counter++;
+}
+
+function deleteInput(id) {
+
+    let inputGroup = document.getElementById(id);
+    inputGroup.remove();
+
+}
+
+/////////////////////////////////////////////////////////////////////////
 
 // chart
 

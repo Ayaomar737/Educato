@@ -861,6 +861,14 @@ div.dt-container .dt-paging .dt-paging-button.current{
     background-color: var(--second-color);
 }
 
+
+#inputContainer .form-control{
+    width: 85% !important;
+}
+#inputContainer .main-btn-delete{
+    margin-right: 25px;
+}
+
 /******************* end material profile page ************************/
 
 .card-border-rules{
