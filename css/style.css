@@ -22,6 +22,9 @@ body {
     background-color: var(--body-bg);
     direction: rtl;
 }
+#myChart{
+    font-family: "Noto Kufi Arabic", sans-serif;
+}
 
 a {
     text-decoration: none;
@@ -110,10 +113,10 @@ table tr{
 .btn-subscribe-change{
     background-color: var(--second-color);
     color: white;
-    padding: 8px 16px 8px 16px;
+    padding: 5px 16px 5px 16px;
     border-radius: 8px;
     border: 1px solid var(--second-color);
-    margin-left: 10px;
+    margin-left: 40px;
     font-size: 16px;
     font-weight: 500;
     transition: all 0.5s ease;
@@ -504,6 +507,19 @@ label.left{
     background-repeat: no-repeat;
 }
 /* datatables */
+
+
+.dt-orderable-asc.dt-orderable-desc:hover{
+    border: none !important;
+    outline: none !important;
+}
+.dt-paging-button.page-item  {
+    border: none !important;
+}
+.dt-layout-start,
+.page-link.last,
+.page-link.first,
+.dt-length,
 div.dt-container div.dt-layout-cell.dt-start,
 div.dt-container .dt-search,
 div.dt-container .dt-paging .dt-paging-button.disabled.last,
@@ -511,7 +527,7 @@ div.dt-container .dt-paging .dt-paging-button.disabled.first,
 div.dt-container .dt-paging .dt-paging-button.last,
 div.dt-container .dt-paging .dt-paging-button.first,
 table.dataTable thead > tr > td.dt-orderable-asc span.dt-column-order, table.dataTable thead > tr > td.dt-orderable-desc span.dt-column-order{
-    display: none;
+    display: none !important;
 }
 .dt-paging.paging_full_numbers{
     display: flex;
@@ -525,10 +541,14 @@ div.dt-container .dt-paging .dt-paging-button.disabled.next{
     margin: 5px;
     border-radius: 4px;
 }
+.dt-layout-end{
+    margin-right: auto !important;
+}
 div.dt-container .dt-paging .dt-paging-button:hover,
 div.dt-container .dt-paging .dt-paging-button.previous:hover,
 div.dt-container .dt-paging .dt-paging-button.current:hover,
-div.dt-container .dt-paging .dt-paging-button.disabled.next:hover{
+div.dt-container .dt-paging .dt-paging-button.disabled.next:hover,
+.dt-paging-button:hover{
     background-color: var(--second-color) !important;
     border: 1px solid var(--second-color);
     color: white !important;
@@ -552,7 +572,7 @@ div.dt-container .dt-paging .dt-paging-button.current{
   }
   #example td{
     text-align: right;
-    padding-right: 10px;
+    padding: 10px;
   }
   .page-item.active .page-link{
     background-color: var(--second-color) !important;
@@ -577,6 +597,7 @@ div.dt-container .dt-paging .dt-paging-button.current{
   }
   .data-table td,
   .data-table .name-table{
+    padding: 10px;
     color: var(--primary-text2);
     font-size: 14px;
     font-weight: 600;
@@ -632,7 +653,8 @@ div.dt-container .dt-paging .dt-paging-button.current{
 }
 .tabs-list li{
     color: var(--select-text);
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
+    padding-bottom: 15px;
     display: inline-block;
     cursor: pointer;
     font-size: 18px;

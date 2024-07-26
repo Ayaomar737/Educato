@@ -71,44 +71,71 @@ function deleteInput(id) {
 
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-      labels: ['ديسمبر', 'نوفمبر','أكتوبر', 'سبتمبر', 'أغسطس', ' يوليو', ' يونيو', ' مايو', 'ابريل', 'مارس', 'فبراير', 'يناير'],
-    datasets: [{
-        label: 'الاباء',
-      data: [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600],
-      backgroundColor: ['#122D4D'],
-      borderRadius: 8,
-      grouped: false,
+    type: 'bar',
+    data: {
+        labels: ['ديسمبر', 'نوفمبر', 'أكتوبر', 'سبتمبر', 'أغسطس', 'يوليو', 'يونيو', 'مايو', 'ابريل', 'مارس', 'فبراير', 'يناير'],
+        datasets: [{
+            label: 'الاباء',
+            data: [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600],
+            backgroundColor: ['#122D4D'],
+            borderRadius: 8,
+            grouped: false,
+        },
+        {
+            label: 'الطلاب',
+            data: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200],
+            backgroundColor: ['#FF8C38'],
+            borderRadius: 8,
+        }]
     },
-    {
-        label:'الطلاب',
-        data: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200],
-        backgroundColor: ['#FF8C38'],
-        borderRadius: 8,
-    }]
-  },
-  options: {
-    plugins: {
-      scales: {
-        y: {
-          beginAtZero: true,
-          grid: {
-            display: false
-          }
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                labels: {
+                    boxWidth: 20,
+                    boxHeight: 20,
+                    font: {
+                        family: 'Noto Kufi Arabic'
+                    }
+                }
+            },
+            tooltip: {
+                bodyFont: {
+                    family: 'Noto Kufi Arabic'
+                },
+                titleFont: {
+                    family: 'Noto Kufi Arabic'
+                },
+                footerFont: {
+                    family: 'Noto Kufi Arabic'
+                }
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: true,
+                grid: {
+                    display: false
+                },
+                ticks: {
+                    font: {
+                        family: 'Noto Kufi Arabic'
+                    }
+                }
+            },
+            x: {
+                ticks: {
+                    font: {
+                        family: 'Noto Kufi Arabic'
+                    }
+                }
+            }
         }
-      },
-      legend: {
-        labels: {
-          boxWidth: 20,
-          boxHeight: 20,
-        }
-      }
-    },
-    responsive: true,
-    maintainAspectRatio: false,
-  }
+    }
 });
+
 
 
 
